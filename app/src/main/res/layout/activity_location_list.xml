@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.locationList.LocationListActivity"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingHorizontal="@dimen/margin_20">
+
+        <TextView
+            android:id="@+id/tvNoLocationMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_200"
+            android:text="@string/no_location_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/margin_14"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLocationList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rtlSortView"
+            android:layout_alignParentTop="true"
+            tools:itemCount="3"
+            tools:listitem="@layout/row_location_item"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/rtlSortView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llBtnView">
+
+            <TextView
+                android:id="@+id/lblSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:text="@string/sort_location"
+                android:textSize="@dimen/font_16" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSortOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/lblSort"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonAsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_asc" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_desc" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBtnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddLocation"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="@string/add_location" />
+
+            <Button
+                android:id="@+id/btnViewMap"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_weight="1"
+                android:backgroundTint="@color/quantum_black_divider"
+                android:text="@string/map_view"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

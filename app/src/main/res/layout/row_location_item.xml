@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_16"
+    android:background="@drawable/theme_bg_gray_rounded_corner"
+    android:layout_marginBottom="@dimen/margin_14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"
+            tools:text="Bengaluru" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_14"
+        tools:text="Whitefield Road, Kuvempu Circle, Bengaluru\n560066, Karnataka" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:contentDescription="Edit"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_16"
+            android:contentDescription="Delete"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+</LinearLayout>

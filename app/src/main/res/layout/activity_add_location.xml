@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_regular"
+    tools:context=".ui.locationList.LocationListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_10"
+        android:text="@string/add"
+        android:minWidth="@dimen/margin_100"
+        android:backgroundTint="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/theme_bottom_sheet"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20"
+        android:animateLayoutChanges="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchedLocationList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_200"
+            android:layout_marginTop="@dimen/margin_10"
+            android:visibility="gone"
+            tools:itemCount="8"
+            tools:listitem="@layout/row_searched_location_item"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/search_places"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_14"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/theme_bg_white_rounded_border"
+            android:padding="@dimen/margin_10">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@null"
+                android:hint="@string/search_places"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

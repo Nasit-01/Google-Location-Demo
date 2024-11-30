@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- margin -->
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_0.5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_34">34dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_52">52dp</dimen>
+    <dimen name="margin_54">54dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="margin_66">66dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_76">76dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_96">96dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_104">104dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_130">130dp</dimen>
+    <dimen name="margin_140">140dp</dimen>
+    <dimen name="margin_158">158dp</dimen>
+    <dimen name="margin_160">160dp</dimen>
+    <dimen name="margin_164">164dp</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_234">234dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_265">265dp</dimen>
+    <dimen name="margin_280">280dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="margin_320">320dp</dimen>
+    <dimen name="margin_360">360dp</dimen>
+    <dimen name="margin_400">400dp</dimen>
+
+
+    <dimen name="margin_1_minus">-1dp</dimen>
+    <dimen name="margin_4_minus">-8dp</dimen>
+    <dimen name="margin_10_minus">-10dp</dimen>
+    <dimen name="margin_16_minus">-16dp</dimen>
+    <dimen name="margin_52_minus">-52dp</dimen>
+    <dimen name="margin_24_minus">-24dp</dimen>
+    <dimen name="margin_28_minus">-28dp</dimen>
+    <dimen name="margin_100_minus">-100dp</dimen>
+
+    <!-- font size -->
+    <dimen name="font_8">8sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_26">26sp</dimen>
+    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_32">32sp</dimen>
+
+</resources>
